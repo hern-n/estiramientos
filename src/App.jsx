@@ -14,6 +14,7 @@ import video8 from './assets/video_estiramiento_8.mp4'
 import video9 from './assets/video_estiramiento_9.mp4'
 import video10 from './assets/video_estiramiento_10.mp4'
 import video11 from './assets/video_estiramiento_11.mp4'
+import video12 from './assets/video_estiramiento_12.mp4'
 
 function App() {
   // Array de videos locales
@@ -28,7 +29,8 @@ function App() {
     { src: video8, title: "Video Estiramiento 8" },
     { src: video9, title: "Video Estiramiento 9" },
     { src: video10, title: "Video Estiramiento 10" },
-    { src: video11, title: "Video Estiramiento 11" }
+    { src: video11, title: "Video Estiramiento 11" },
+    { src: video12, title: "Video Estiramiento 12" }
   ];
 
   return (
