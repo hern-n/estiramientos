@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
-function VideoCarousel({ videos }) {
-  const [current, setCurrent] = useState(0);
-
+function VideoCarousel({ videos, current, setCurrent }) {
   const prevVideo = () =>
-    setCurrent((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
+    setCurrent(current === 0 ? videos.length - 1 : current - 1);
   const nextVideo = () =>
-    setCurrent((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
+    setCurrent(current === videos.length - 1 ? 0 : current + 1);
 
   return (
     <div className="video-carousel-container">

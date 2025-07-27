@@ -1,6 +1,7 @@
-import React from 'react'
-import VideoCarousel from './components/VideoCarousel'
-import './App.css'
+import React, { useState } from "react";
+import VideoIndex from "./components/VideoIndex";
+import VideoCarousel from "./components/VideoCarousel";
+import './App.css';
 
 // Importar videos locales
 import video1 from './assets/video_estiramiento_1.mp4'
@@ -17,6 +18,8 @@ import video11 from './assets/video_estiramiento_11.mp4'
 import video12 from './assets/video_estiramiento_12.mp4'
 
 function App() {
+  const [current, setCurrent] = useState(0);
+
   // Array de videos locales
   const videos = [
     { src: video1, title: "Video Estiramiento 1" },
@@ -36,9 +39,10 @@ function App() {
   return (
     <div className="app">
       <h1>Carrusel de Videos de Estiramientos</h1>
-      <VideoCarousel videos={videos} />
+      <VideoIndex total={videos.length} onSelect={setCurrent} current={current} />
+      <VideoCarousel videos={videos} current={current} setCurrent={setCurrent} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
