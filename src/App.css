@@ -170,55 +170,72 @@ body, html, #root {
     gap: 1vw;
   }
   .video-player-container {
-    width: 90vw;
-    height: 40vh;
+    width: 95vw;
+    height: 35vh;
     max-width: 99vw;
-    max-height: 45vh;
+    max-height: 40vh;
   }
 }
 
 @media (max-width: 600px) {
   .app h1 {
-    font-size: 1.3rem;
-    margin: 1rem 0 0.7rem 0;
+    font-size: 1.1rem;
+    margin: 0.7rem 0 0.5rem 0;
   }
   .carousel-content {
     flex-direction: column;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     max-width: 100vw;
-    max-height: 100vw;
-    padding: 0.5rem 0.2rem;
-    gap: 1.2rem;
+    max-height: 100vh;
+    padding: 0.2rem 0.1rem;
+    gap: 0.5rem;
+    border-radius: 0;
+    box-shadow: none;
+    background: rgba(30, 30, 40, 0.92);
   }
   .video-player-container {
     width: 98vw;
-    height: 35vh;
+    height: 32vh;
     max-width: 100vw;
-    max-height: 40vh;
+    max-height: 35vh;
+    border-radius: 10px;
+    padding: 0;
+  }
+  .video-player {
+    border-radius: 10px;
   }
   .carousel-arrow {
-    width: 44px;
-    height: 44px;
-    font-size: 1.3rem;
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    margin: 0.3rem auto;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+  }
+  .left-arrow, .right-arrow {
+    order: unset;
+    align-self: center;
   }
   .video-title {
-    font-size: 1rem;
-    padding: 0.4rem 1rem;
-    bottom: 8px;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.7rem;
+    bottom: 4px;
+    border-radius: 8px;
   }
 }
 
+/* Para pantallas muy pequeñas */
 @media (max-width: 400px) {
   .video-player-container {
-    height: 30vh;
+    height: 22vh;
   }
   .carousel-arrow {
-    width: 32px;
-    height: 32px;
-    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
   }
   .video-title {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
   }
 }
