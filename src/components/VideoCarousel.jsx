@@ -24,6 +24,7 @@ function VideoCarousel({ videos, current, setCurrent }) {
             controls
             autoPlay
             loop
+            muted
           />
           <div className="video-title">{videos[current].title}</div>
         </div>
