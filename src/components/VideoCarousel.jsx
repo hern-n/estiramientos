@@ -26,7 +26,6 @@ function VideoCarousel({ videos, current, setCurrent }) {
             loop
             muted
           />
-          <div className="video-title">{videos[current].title}</div>
         </div>
         <button
           className="carousel-arrow right-arrow"

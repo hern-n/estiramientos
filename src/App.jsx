@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Videos de Estiramientos de espalda</h1>
+      <h1>Estiramientos de espalda</h1>
       <VideoIndex total={videos.length} onSelect={setCurrent} current={current} />
       <VideoCarousel videos={videos} current={current} setCurrent={setCurrent} />
     </div>
