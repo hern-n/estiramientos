@@ -1,0 +1,20 @@
+name: estiramientos
+description: >-
+  A React web application that guides users through 12 back stretching exercises with embedded videos. Features a
+  scrollable video index and a carousel-style player. Deployed on Vercel.
+author: Hernán
+version: 0.0.0
+technologies:
+  - React
+  - Vite
+  - JavaScript
+  - ESLint
+  - Vercel
+repository: https://github.com/hern-n/estiramientos.git
+license: MIT
+tags:
+  - web
+  - react
+  - health
+  - fitness
+lastModified: '2026-06-16T18:16:25.074Z'
